@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+video#bgvid {
+	position: fixed; left: 0; top: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url(image.jpg) no-repeat;
+	background-size: cover;
+}
+
+video#bgvid {
+	height: 100% !important;
+	min-width: 0%;
+	min-height: 0%;	
+}
+
+.firstquote, .secondquote {
+	padding-top: 30%;
+	font-family: 'Raleway', sans-serif !important;
+}
+
+.clicksecond {
+	display: none;
+}
