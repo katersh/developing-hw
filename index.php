@@ -12,8 +12,8 @@
 	// sending query
 	$result = mysql_query("SELECT quote FROM quotes WHERE id='1'");
 	$result2 = mysql_query("SELECT author FROM quotes WHERE id='1'");
-	$result3 = mysql_query("SELECT quote FROM quotes WHERE id='2'")
-	$result4 = mysql_query("SELECT author FROM quotes WHERE id='2'")
+	$result3 = mysql_query("SELECT quote FROM quotes WHERE id='2'");
+	$result4 = mysql_query("SELECT author FROM quotes WHERE id='2'");
 	if (!$result || !$result2 || !$result3 || !$result4) {
 	    die("blja");
 	}
@@ -62,13 +62,13 @@
 				while($row3 = mysql_fetch_row($result3))
 					{
 					    foreach($row3 as $cell3)
-					        echo "<h1 class='secondquote'>$cell</h1>";
+					        echo "<h1 class='secondquote'>$cell3</h1>";
 
 					}
 				while($row4 = mysql_fetch_row($result4))
 					{
 						foreach ($row4 as $cell4) {
-							echo "<h6>$cell2</h6>";
+							echo "<h6>$cell4</h6>";
 						}
 					}
 			?>
